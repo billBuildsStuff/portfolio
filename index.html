@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- disable after launching -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<!--           -->
+<title>William Billings | Web Developer & Identity Designer</title>
+
+<meta name="description" content="Sample works and portfolio by William Billings Web Developer & Identity Designer">
+<!-- hook react -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<!-- react end -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="author" content="William Billings">
+
+
+<body>
+<div class="content-contain">
+        <img src="img/logo.png" alt="Logo of William Billings" height="auto" width="auto"/>
+</div>
+<div class='white-wrap'>
+    <p class="service-desc">Brand Identity & Design Services</p>
+  <div id="glider-wrap">
+
+        <div class="glider-contain">
+          <div class="glider">
+            <div class="logo"><img src="img/logos/1.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+              <div class="logo"><img src="img/logos/2.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+              <div class="logo"><img src="img/logos/3.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+              <div class="logo"><img src="img/logos/4.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+              <div class="logo"><img src="img/logos/5.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+              <div class="logo"><img src="img/logos/6.png" alt="Logo of William Billings" height="auto" width="auto"/></div>
+          </div>
+          <button aria-label="Previous" class="glider-prev">«</button>
+          <button aria-label="Next" class="glider-next">»</button>
+          <div role="tablist" class="dots"></div>
+        </div>
+    </div>
+</div>
+
+<div class="grey-wrap">
+  <div class="content-contain">
+    <p>Hello<p>
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+
+<script>
+new Glider(document.querySelector('.glider'), {
+        // Mobile-first defaults
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        scrollLock: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive: [
+          {
+            // screens greater than >= 775px
+            breakpoint: 775,
+            settings: {
+
+              // Set to `auto` and provide item width to adjust to viewport
+              slidesToShow: '1',
+
+
+              duration: 0.25
+            }
+          },{
+            // screens greater than >= 1024px
+            breakpoint: 1024,
+            settings: {
+
+              slidesToShow: 1,
+
+
+              duration: 0.25
+            }
+          }
+        ]
+});
+</script>
+</ html>
