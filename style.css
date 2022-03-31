@@ -1,32 +1,19 @@
 body{
   background:#AFCFD4;
-margin:0px;
-font-family:impact, arial, helvetica;
+  margin:0px;
+  font-family:impact, arial, helvetica;
 }
-
-
-/*#splashDesc{
-
-  width:100%;
-    text-align: center;
-    font-family: helvetica, arial;
-    font-size:38px;
-    color:#B0B1B0;
-    font-weight:100;
-}*/
 
 .white-wrap{
   width:100%;
   background-color: #ffffff;
   position:static;
-  margin-top:40px;
-  padding-bottom:40px;
+
 }
 .grey-wrap{
   width:100%;
   background-color: #252525;
   position:static;
-  padding-bottom:25px;
   color:#ffffff;
 }
 
@@ -40,7 +27,6 @@ font-family:impact, arial, helvetica;
 .service-desc{
 
   text-align:center;
-  padding-top:15px;
   font-size:36px;
   color:#656666;
   letter-spacing: -1px;
@@ -53,7 +39,7 @@ font-family:impact, arial, helvetica;
 #glider-wrap{
   width:1024px;
   margin:0 auto;
-height:650px;
+  height:650px;
 }
 
 .glider-contain {
