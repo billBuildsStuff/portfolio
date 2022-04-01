@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Billings</title>
     <link rel="stylesheet" href="build/tailwind.css">
+
 </head>
-<body>
+<body class="text-[#2d2d2d]">
 
     <header class="">
 
@@ -16,47 +17,68 @@
                     <img class="p-4" width="350px" height="auto" src="../img/logo.svg" />
                 </object>
             </div>
-            <div class="flex items-center justify-center col-start-4 col-end-5 px-4 text-center duration-300 border-l hover:bg-slate-200">
-                    <a href="#" class="text-2xl">Identity Design</a>
+            <div class="flex items-center justify-center col-start-4 col-end-5 px-4 text-center duration-300 border-l border-slate-100 hover:bg-slate-50">
+                    <a id="dropdown" href="#" class="text-2xl tracking-tighter ease-in-out ">Identity Design</a>
                     </div>
-                    <div class="flex items-center justify-center col-start-5 col-end-6 px-4 text-center duration-300 border-x hover:bg-slate-200">
-                        <a href="#" class="text-2xl">Web Development</a>
+                    <div class="flex items-center justify-center col-start-5 col-end-6 px-4 text-center duration-300 border-x border-slate-100 hover:bg-slate-50">
+                        <a href="#" class="text-2xl tracking-tighter">Web Development</a>
                     </div>
-                    <div class="flex items-center justify-center col-start-6 col-end-7 px-4 text-center duration-300 hover:bg-slate-200">
-                        <a href="#" class="text-2xl">Say Hi!</a>
+                    <div class="flex items-center justify-center col-start-6 col-end-7 px-4 text-center duration-300 hover:hover:bg-slate-50">
+                        <a href="#" class="text-2xl tracking-tighter">Git</a>
                     </div>
         </div>
 
     </header> 
     <main>
 
-        <div class="grid grid-cols-3 gap-1 pb-10 pl-10 pr-10 grid-row-2 bg-slate-200">
-            <div class="col-start-1 col-end-4">
-                <h1 class="pt-5 pb-5 text-2xl">Brand Identity</h1>
+        <div class="grid gap-1 pb-10 pl-10 pr-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-col-1 grid-row-2 bg-slate-50">
+            <div class="col-start-1 lg:col-end-4 md:col-end-3 sm:col-end-2">
+                <h1 class="pt-5 pb-5 text-2xl text-center">Brand Identity</h1>
+                <div id="desc" class="hidden"><p class="pb-5 text-lg font-thin tracking-tighter ">A professional & dedicated individual who has a large appetite for more information and complex projects. A designer who thinks like a programmer. A programmer who thinks like a designer. An individual who delivers work in accordance to a company's mission and value. A humble father who loves to skate with his children.</p></div>
             </div>
-            <div class="col-start-1 col-end-2 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/1.png"/>
             </div>
-            <div class="col-start-2 col-end-3 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/2.png" />
             </div>
-            <div class="col-start-3 col-end-4 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/3.png" />
             </div>
-            <div class="col-start-1 col-end-2 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/4.png" />
             </div>
-            <div class="col-start-2 col-end-3 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/5.png" />
             </div>
-            <div class="col-start-3 col-end-4 bg-white ">
+            <div class="bg-white ">
                 <img src="../img/logos/6.png" />
             </div>
         </div>
+
+        <script>
+          function classToggle() {
+              const desc = document.querySelector('#desc');
+            desc.classList.toggle('hidden');
+            desc.classList.toggle('visibleNow');
+
+            }
+            document.querySelector('#dropdown').addEventListener('click', classToggle);
+        </script>
+
         <div class="grid grid-cols-2 gap-1 p-10">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque, mi ut mollis aliquam, nisl nunc gravida sapien, non pellentesque eros ligula non erat. Ut quis dui vel mauris pharetra tincidunt. Nullam porttitor felis elit, a tincidunt justo tincidunt ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. In nisi magna, porttitor vel mattis sed, convallis sit amet ligula. Cras ultrices feugiat ante vel vulputate. Phasellus sit amet nibh ac lorem tincidunt imperdiet. Aenean massa odio, laoreet at blandit congue, hendrerit vel lorem. Suspendisse maximus tempor orci, a ornare elit. Curabitur placerat arcu vel felis ultricies eleifend. Integer accumsan, erat quis pulvinar venenatis, dui mi pulvinar massa, ac tempor mi tellus sit amet libero. Vivamus placerat urna dolor, ac egestas justo hendrerit vitae. In mollis dolor nisl, mattis euismod felis tristique non. Ut eleifend in leo at rhoncus. Aenean quis massa non velit interdum tincidunt.</p>
+            <h1 class="pt-5 pb-5 text-2xl start-col-1 end-col-2">Web Development</h1>
+            <p class="col-start-1 col-end-3 text-lg font-thin tracking-tighter">Veteran full-stack web developer currently freelancing, however always hungry for a new project or opportunity. I was uploaded into the Design world in 2007 via my Technical Program: "Computer Animation & Web Design. There I fell in love with Digital Design & Web Development. There I was able to walk in the door as a Graphic Design Intern at of world re-known graphic design firm "Jager Di Paola Kemp", located in Burlington Vermont. They are now known as "Solidarity of Unbridled Labour". There I gained early professional skills and gained an early preview to the inner workings of a professional environment. The most important takeaway from this experience was the advanced brand strategies applied to delivery quality design products. </p>
+            <p class="col-start-1 col-end-3 text-lg font-thin tracking-tighter">I moved to Boston to enrolled at The New England Institute of Art, in their Web Design & Interactive Media curriculum. There I focused on Full-Stack Web Development & User Interface Design. While studying in Boston I was also freelancing & working on home projects. These projects ranged from working with start-up companies build bare-bones web application prototypes; to running “test” PhP scripts at home on self-refurbished laptops to fully install & clone existing WordPress instances on a RDM.</p>
+            <p class="col-start-1 col-end-3 text-lg font-thin tracking-tighter">From Boston I went from Full-Stack-Developer to Full-Time-Dad. I now have 3 beautiful children, who have honestly inspired me to jump back into my career. After a few years away from the industry I have returned to freelancing while updating my knowledge with ES6, Angular.JS, Node.JS, TailWind, AWS Cloud & much more.</p>
+            <h1 class="pt-5 pb-5 text-2xl start-col-1 end-col-2">What You Get When You Hire Me</h1>
+            <p class="col-start-1 col-end-3 text-lg font-thin tracking-tighter">A professional & dedicated individual who has a large appetite for more information and complex projects. A designer who thinks like a programmer. A programmer who thinks like a designer. An individual who delivers work in accordance to a company's mission and value. A humble father who loves to skate with his children.</p>
         </div>
         
     </main>
+
+    <footer class="grid text-center text-white grid-col-2 bg-[#2d2d2d]">
+        <p class="pt-10 pb-10">William Billings | Web Developer & Identity Designer</p>
+    </footer>
     
 </body>

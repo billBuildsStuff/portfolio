@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
     font-family:Impact;
+}
+
+.hidden {
+    display:none;
+    transition: all 0.5s ease-in-out;
+}
+
+.visibleNow {
+    display:contents;
+    transition: all 0.5s ease-in-out;
+    background-color: pink;
+  
 }
