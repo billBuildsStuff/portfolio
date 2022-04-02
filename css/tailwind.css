@@ -8,16 +8,32 @@ p{
 
 h1{
     font-family:Impact;
+
 }
 
-.hidden {
-    display:none;
-    transition: all 0.5s ease-in-out;
+
+.hideMe {
+    opacity: 0;
+    height:0px;
+    
+    
+}
+#slowDown{
+    transition: all 1s linear; 
 }
 
 .visibleNow {
-    display:contents;
-    transition: all 0.5s ease-in-out;
-    background-color: pink;
+    opacity:1;
+    transition: all .3s ease-in;
+    height:auto;
   
 }
+.spinner{
+    transition: all 1.5s ease-in-out;
+}
+.spinner:hover,
+.spinner:focus {
+  filter: invert(100%) sepia(51%) saturate(2878%) hue-rotate(3060deg) brightness(85%) contrast(97%);
+  transition: all 1.5s ease-in-out;
+}
+

@@ -436,8 +436,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .col-start-6 {
   grid-column-start: 6;
 }
-.col-end-2 {
-  grid-column-end: 2;
+.col-end-3 {
+  grid-column-end: 3;
 }
 .col-end-5 {
   grid-column-end: 5;
@@ -448,8 +448,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .col-end-7 {
   grid-column-end: 7;
 }
-.col-end-3 {
-  grid-column-end: 3;
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
 }
 .flex {
   display: flex;
@@ -457,14 +460,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid {
   display: grid;
 }
-.hidden {
-  display: none;
+.h-56 {
+  height: 14rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.w-\[100\%\] {
+  width: 100%;
+}
+.w-\[75\%\] {
+  width: 75%;
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -475,16 +484,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-1 {
   gap: 0.25rem;
 }
-.border-x {
-  border-left-width: 1px;
-  border-right-width: 1px;
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
 }
-.border-l {
-  border-left-width: 1px;
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+.border {
+  border-width: 1px;
 }
 .border-slate-100 {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 .bg-slate-50 {
   --tw-bg-opacity: 1;
@@ -494,15 +510,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
 .bg-\[\#2d2d2d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(45 45 45 / var(--tw-bg-opacity));
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .p-4 {
   padding: 1rem;
 }
-.p-10 {
-  padding: 2.5rem;
+.p-2 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -511,17 +537,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-10 {
   padding-bottom: 2.5rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .pl-10 {
   padding-left: 2.5rem;
 }
 .pr-10 {
   padding-right: 2.5rem;
-}
-.pt-5 {
-  padding-top: 1.25rem;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -564,38 +590,100 @@ p{
 
 h1{
     font-family:Impact;
+
 }
 
-.hidden {
-    display:none;
-    transition: all 0.5s ease-in-out;
+
+.hideMe {
+    opacity: 0;
+    height:0px;
+    
+    
+}
+#slowDown{
+    transition: all 1s linear; 
 }
 
 .visibleNow {
-    display:contents;
-    transition: all 0.5s ease-in-out;
-    background-color: pink;
+    opacity:1;
+    transition: all .3s ease-in;
+    height:auto;
   
 }
+.spinner{
+    transition: all 1.5s ease-in-out;
+}
+.spinner:hover,
+.spinner:focus {
+  filter: invert(100%) sepia(51%) saturate(2878%) hue-rotate(3060deg) brightness(85%) contrast(97%);
+  transition: all 1.5s ease-in-out;
+}
+@-webkit-keyframes bounce {
 
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+@keyframes bounce {
+
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.hover\:animate-bounce:hover {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
 .hover\:bg-slate-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
-
-.hover\:hover\:bg-slate-50:hover:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+.hover\:text-slate-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
+@media (min-width: 320px) {
 
+  .xsm\:pr-10 {
+    padding-right: 2.5rem;
+  }
+}
 @media (min-width: 640px) {
 
   .sm\:col-end-2 {
     grid-column-end: 2;
   }
-}
 
+  .sm\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 @media (min-width: 768px) {
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
 
   .md\:col-end-3 {
     grid-column-end: 3;
@@ -604,9 +692,21 @@ h1{
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
+  .md\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
 @media (min-width: 1024px) {
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
+  }
 
   .lg\:col-end-4 {
     grid-column-end: 4;
@@ -615,4 +715,14 @@ h1{
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
+
