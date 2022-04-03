@@ -463,14 +463,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-56 {
   height: 14rem;
 }
-.h-20 {
-  height: 5rem;
-}
 .w-\[100\%\] {
   width: 100%;
-}
-.w-\[75\%\] {
-  width: 75%;
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -510,10 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
 .bg-\[\#2d2d2d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(45 45 45 / var(--tw-bg-opacity));
@@ -534,11 +524,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -548,6 +539,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pr-10 {
   padding-right: 2.5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -565,6 +559,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-thin {
   font-weight: 100;
+}
+.font-bold {
+  font-weight: 700;
 }
 .tracking-tighter {
   letter-spacing: -0.05em;
@@ -650,15 +647,16 @@ h1{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
-.hover\:bg-slate-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
 .hover\:text-slate-400:hover {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 @media (min-width: 320px) {
+
+  .xsm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 
   .xsm\:pr-10 {
     padding-right: 2.5rem;
@@ -689,8 +687,17 @@ h1{
     grid-column-end: 3;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pt-5 {
@@ -712,8 +719,17 @@ h1{
     grid-column-end: 4;
   }
 
+  .lg\:w-\[65\%\] {
+    width: 65%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .lg\:pt-10 {
