@@ -29,7 +29,9 @@ echo "
   gtag('config', 'G-GD28L9CX6N');
 </script>
     <link rel='stylesheet' href='public/build/tailwind.css'>
+    <link href='http://fonts.cdnfonts.com/css/maximum-impact' rel='stylesheet'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href='http://fonts.cdnfonts.com/css/impacted' rel='stylesheet'>
 
 </head>
 <body class='text-[#2d2d2d]'>
@@ -43,10 +45,10 @@ echo "
                 </object>
             </div>
             <div class='flex items-center justify-center col-start-4 col-end-5 text-center duration-300 lg:px-4 md:px-4 sm:px-4 xsm:pr-16 hover:text-slate-400'>
-                    <a id='dropdown' href='#' class='tracking-tighter ease-in-out sm:text-base md:text-xl lg:text-xl '>Brand Identity Philosophy</a>
+                    <a id='dropdown' href='#' class='tracking-tighter ease-in-out xsm:text-sm sm:text-base md:text-xl lg:text-xl '>Brand Identity Philosophy</a>
             </div>
             <div class='flex items-center justify-center col-start-5 col-end-6 text-center duration-300 lg:px-4 md:px-4 sm:px-4 xsm:pr-16 hover:text-slate-400'>
-                    <a href='#about' class='tracking-tighter sm:text-base md:text-xl lg:text-xl'>About Me</a>
+                    <a href='#about' class='tracking-tighter xsm:text-sm sm:text-base md:text-xl lg:text-xl'>About Me</a>
             </div>
             <div class='flex items-center justify-center col-start-6 col-end-7 px-4 text-center duration-300 hover:text-slate-400'>
                     <div class='lg:px-1 md:px-1 sm:px-1 xsm:px-0'><a href='https://github.com/billbuildsstuff' class='p-2'>
@@ -115,8 +117,8 @@ echo "
                     <p class='text-lg font-thin tracking-tighter'>A professional & dedicated individual who has a large appetite for more information and complex projects. A designer who thinks like a programmer. A programmer who thinks like a designer. An individual who delivers work in accordance with a company's mission and value. A humble father who loves to skate with his children.</p>
             </div>
                 <div class='pt-5 '>
-                       <h1 class='pb-5 text-2xl '>THANK YOU FOR YOUR E-MAIL!</h1>
-                    
+                       <h1 class='pb-5 text-2xl '>THANK YOU FOR THE E-MAIL!</h1>
+                     
                 </div>
                
                 <div class='pt-5 lg:col-start-3 lg:col-end-4 md:col-start-1 md:col-end-3 '>
@@ -138,6 +140,7 @@ echo "
     </footer>
     
 </body>
+
 
 ";
 ?>
