@@ -1,10 +1,21 @@
-
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Logo, Graphic, Web, Designer, Developer, Programmer, New-England, Burlington, Vermont">
+    <meta name="description" content="New England Based Web Developer & Identity Designer. Over 10 years experience designing high-quality logos, and websites. Freelancer for hire.">
+    <meta name="author" content="@billwhobuildsstuff">
     <title>William Billings | Web Developer & Identity Designer</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GD28L9CX6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GD28L9CX6N');
+</script>
     <link rel="stylesheet" href="build/tailwind.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
