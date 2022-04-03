@@ -16,7 +16,7 @@
 
   gtag('config', 'G-GD28L9CX6N');
 </script>
-    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="public/build/tailwind.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -27,7 +27,7 @@
         <div class="grid grid-cols-6 p-10 "> <!-- begin 8 col structure | header layout -->
             <div class="col-start-1 col-end-3"> 
                 <object  data="your.svg" type="image/svg+xml">
-                    <img class="spinner" class="p-4" width="350px" height="auto" src="../img/logo.svg" />
+                    <img class="spinner" class="p-4" width="350px" height="auto" src="img/logo.svg" />
                 </object>
             </div>
             <div class="flex items-center justify-center col-start-4 col-end-5 px-4 text-center duration-300 xsm:pr-10 hover:text-slate-400">
@@ -61,22 +61,22 @@
                 </div>
             </div>
             <div class="bg-white">
-                <img src="../img/logos/1.png"/>
+                <img src="img/logos/1.png"/>
             </div>
             <div class="bg-white ">
-                <img src="../img/logos/2.png" />
+                <img src="img/logos/2.png" />
             </div>
             <div class="bg-white ">
-                <img src="../img/logos/3.png" />
+                <img src="img/logos/3.png" />
             </div>
             <div class="bg-white ">
-                <img src="../img/logos/4.png" />
+                <img src="img/logos/4.png" />
             </div>
             <div class="bg-white ">
-                <img src="../img/logos/5.png" />
+                <img src="img/logos/5.png" />
             </div>
             <div class="bg-white ">
-                <img src="../img/logos/6.png" />
+                <img src="img/logos/6.png" />
             </div>
         </div>
 
@@ -119,7 +119,7 @@
                
                 <div class="pt-5 lg:col-start-3 lg:col-end-4 md:col-start-1 md:col-end-3 ">
                     <div class="md:pt-5 sm:pt-5 lg:pt-10">
-                        <img class="sm:[75%] md:w-[50%] lg:w-[65%] mr-auto ml-auto" src="../img/me.jpg" alt="some words to be changed"/>
+                        <img class="sm:[75%] md:w-[50%] lg:w-[65%] mr-auto ml-auto" src="img/me.jpg" alt="some words to be changed"/>
                     </div> 
                     <div class="pt-10">
                         <a href="https://github.com/billbuildsstuff">

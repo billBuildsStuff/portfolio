@@ -10,14 +10,25 @@ $subject = 'Contact Form';
 $mailheader = 'From: $email \r\n';
 mail($recipient, $subject, $formcontent, $mailheader) or die('Error!');
 echo "
-    
 <!DOCTYPE html>
 <html class='scroll-smooth' lang='en'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='keywords' content='Logo, Graphic, Web, Designer, Developer, Programmer, New-England, Burlington, Vermont'>
+    <meta name='description' content='New England Based Web Developer & Identity Designer. Over 10 years experience designing high-quality logos, and websites. Freelancer for hire.'>
+    <meta name='author' content='@billwhobuildsstuff'>
     <title>William Billings | Web Developer & Identity Designer</title>
-    <link rel='stylesheet' href='build/tailwind.css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-GD28L9CX6N'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GD28L9CX6N');
+</script>
+    <link rel='stylesheet' href='public/build/tailwind.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
 </head>
@@ -28,7 +39,7 @@ echo "
         <div class='grid grid-cols-6 p-10 '> <!-- begin 8 col structure | header layout -->
             <div class='col-start-1 col-end-3'> 
                 <object  data='your.svg' type='image/svg+xml'>
-                    <img class='spinner' class='p-4' width='350px' height='auto' src='../img/logo.svg' />
+                    <img class='spinner' class='p-4' width='350px' height='auto' src='img/logo.svg' />
                 </object>
             </div>
             <div class='flex items-center justify-center col-start-4 col-end-5 px-4 text-center duration-300 xsm:pr-10 hover:text-slate-400'>
@@ -58,26 +69,26 @@ echo "
             <div class='col-start-1 lg:col-end-4 md:col-end-3 sm:col-end-2'>
                 <h1 class='pb-10 text-2xl text-center duration-400 '>BRAND IDENTITY</h1>
                 <div id='desc' class='hideMe'>
-                    <p class='px-10 pb-10 text-lg font-thin tracking-tighter duration-400 md:px-10 sm: xsm:px-5 lg:px-44 '>There was a moment when you formulated your idea where your tongue was tied, however your brain was operating at maximum capacity. This was the purest moment of your <span class='font-bold'>Brand Empathy</span>. You were literally standing in the shoes of your consumer saying: <span class='font-bold'>'this 'thing or service' is exactly what is needed'</span>. Your <span class='font-bold'>Brand Identity</span> is your best delivery tool to express that purest form of <span class='font-bold'>Brand Empathy</span>. Fascinated with glyphs, symbols, logos and branding since I was a child, I am the perfect canidate to sculpt the presence your business deserves. I simply use techniques that have been utilized for thousands of years (using pen, paper & Adobe Illustrator in lieu of the chisel and stone). I specialize in compressing <span class='font-bold'>large concepts</span> into well formed <span class='font-bold'>visual-respresentations</span>.</p>
+                    <p class='px-10 pb-10 text-lg font-thin tracking-tighter duration-400 md:px-10 sm: xsm:px-5 lg:px-44 '>There was a moment when you formulated your idea where your tongue was tied, however, your brain was operating at maximum capacity. This was the purest moment of your <span class='font-bold'>Brand Empathy</span>. You were literally standing in the shoes of your consumer saying: 'this 'thing or service' is exactly what is needed'. Your <span class='font-bold'>Brand Identity</span> is your best delivery tool to express that purest form of <span class='font-bold'>Brand Empathy</span>. Fascinated with glyphs, symbols, logos, and branding since I was a child, I am the perfect candidate to sculpt the presence your business deserves. I simply use techniques that have been utilized for thousands of years (using pen, paper & Adobe Illustrator in lieu of the chisel and stone). I specialize in compressing <span class='font-bold'>large concepts</span> into well-formed <span class='font-bold'>visual representations</span>.</p>
                 </div>
             </div>
             <div class='bg-white'>
-                <img src='../img/logos/1.png'/>
+                <img src='img/logos/1.png'/>
             </div>
             <div class='bg-white '>
-                <img src='../img/logos/2.png' />
+                <img src='img/logos/2.png' />
             </div>
             <div class='bg-white '>
-                <img src='../img/logos/3.png' />
+                <img src='img/logos/3.png' />
             </div>
             <div class='bg-white '>
-                <img src='../img/logos/4.png' />
+                <img src='img/logos/4.png' />
             </div>
             <div class='bg-white '>
-                <img src='../img/logos/5.png' />
+                <img src='img/logos/5.png' />
             </div>
             <div class='bg-white '>
-                <img src='../img/logos/6.png' />
+                <img src='img/logos/6.png' />
             </div>
         </div>
 
@@ -97,20 +108,30 @@ echo "
         <div class='grid pt-5 pb-10 pl-10 pr-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-col-1 gap-x-20'>
            <div class='col-start-1'>
                     <h1 id='about' class='pt-5 pb-5 text-2xl'>ABOUT BILL</h1>
-                    <p class='text-lg font-thin tracking-tighter '>Veteran full-stack web developer currently freelancing, however always hungry for a new project or opportunity. I was uploaded into the Design world in 2007 via my Technical Program: 'Computer Animation & Web Design. There I fell in love with Digital Design & Web Development. There I was able to walk in the door as a Graphic Design Intern at of world re-known graphic design firm 'Jager Di Paola Kemp', located in Burlington Vermont. They are now known as 'Solidarity of Unbridled Labour'. There I gained early professional skills and gained an early preview to the inner workings of a professional environment. The most important takeaway from this experience was the advanced brand strategies applied to delivery quality design products. </p>
-                    <p class='text-lg font-thin tracking-tighter '>I moved to Boston to enrolled at The New England Institute of Art, in their Web Design & Interactive Media curriculum. There I focused on Full-Stack Web Development & User Interface Design. While studying in Boston I was also freelancing & working on home projects. These projects ranged from working with start-up companies build bare-bones web application prototypes; to running “test” PhP scripts at home on self-refurbished laptops to fully install & clone existing WordPress instances on a RDM.</p>
-                    <p class='text-lg font-thin tracking-tighter '>From Boston I went from Full-Stack-Developer to Full-Time-Dad. I now have 3 beautiful children, who have honestly inspired me to jump back into my career. After a few years away from the industry I have returned to freelancing while updating my knowledge with ES6, Angular.JS, Node.JS, TailWind, AWS Cloud & much more.</p>
-                    <h1 class='pt-5 pb-5 text-2xl'>WHAT YOU GET WHEN YOU HIRE ME</h1>
-                    <p class='text-lg font-thin tracking-tighter'>A professional & dedicated individual who has a large appetite for more information and complex projects. A designer who thinks like a programmer. A programmer who thinks like a designer. An individual who delivers work in accordance to a company's mission and value. A humble father who loves to skate with his children.</p>
+                    <p class='pb-5 text-lg font-thin tracking-tighter '>Veteran full-stack web developer currently freelancing, however always hungry for a new project or opportunity. I was uploaded into the Design world in 2007 via my Technical Program: 'Computer Animation & Web Design. There I fell in love with Digital Design & Web Development. I was also able to walk in the door as a Graphic Design Intern at world re-known graphic design firm 'Jager Di Paola Kemp', located in Burlington Vermont. They are now known as 'Solidarity of Unbridled Labour'. There I gained early professional skills and caught a glimpse of the inner workings of a professional environment. The most important takeaway from this experience was the advanced brand strategies applied to delivering quality design products. </p>
+                    <p class='pb-5 text-lg font-thin tracking-tighter '>I moved to Boston to enroll at The New England Institute of Art, in their Web Design & Interactive Media curriculum. There I focused on full-stack Web Development & User Interface Design. While studying in Boston I was also freelancing & working on home projects. These projects ranged from working with start-up companies to build bare-bones web application prototypes; to running “test” PHP scripts at home on self-refurbished laptops which would fully install & clone existing WordPress instances on MySQL databases.</p>
+                    <p class='text-lg font-thin tracking-tighter '>From Boston, I went from full-stack-Developer to full-time-Dad. I now have 3 beautiful children, who have honestly inspired me to jump back into my career. After a few years away from the industry, I have returned to freelancing while updating my knowledge with ES6, Angular.JS, Node.JS, TailWind, AWS Cloud & much more.</p>
+                    <h1 id='about' class='pt-5 pb-5 text-2xl'>WHAT YOU GET WHEN YOU HIRE ME</h1>
+                    <p class='text-lg font-thin tracking-tighter'>A professional & dedicated individual who has a large appetite for more information and complex projects. A designer who thinks like a programmer. A programmer who thinks like a designer. An individual who delivers work in accordance with a company's mission and value. A humble father who loves to skate with his children.</p>
             </div>
                 <div class='pt-5 '>
-                       <h1 class='pb-5 text-2xl '>THANK YOU FOR THE E-MAIL</h1>
-                      
+                       <h1 class='pb-5 text-2xl '>LIKE THE CUT OF MY JIB?</h1>
+                       <form action='contact.php' method='POST'>
+                       <div class='pb-5 '> <label for='fullName'>Full Name:</label></div>
+                       <div class='pt-5 pb-5'><input class='w-[100%] p-1 bg-slate-50 border border-slate-100' type='text' id='fullName' name='fullName'></div>
+                       <div class='pt-5 pb-5'><label for='email'>E-Mail:</label></div>
+                       <div class='pt-5 pb-5'><input class='w-[100%] p-1 bg-slate-50 border border-slate-100' type='email' id='email' name='email'></div>
+                       <div class='pt-5 pb-5'> <label for='subject'>Subject:</label></div>
+                       <div class='pt-5 pb-5'><input class='w-[100%] p-1 bg-slate-50 border border-slate-100' type='text' id='subject' name='subject'></div>
+                       <div class='pt-5 pb-5'><label for='message'>Message:</label></div>
+                       <div class='pt-5 pb-5'><textarea class='w-[100%] p-1 bg-slate-50 border border-slate-200 h-56 ' id='message' name='message'>Hi, Bill I want to hire you!</textarea></div>
+                       <div class='pt-5 pb-5'><input type='submit' value='Send'></div>
+                    </form>
                 </div>
                
                 <div class='pt-5 lg:col-start-3 lg:col-end-4 md:col-start-1 md:col-end-3 '>
                     <div class='md:pt-5 sm:pt-5 lg:pt-10'>
-                        <img class='sm:[75%] md:w-[50%] lg:w-[65%] mr-auto ml-auto' src='../img/me.jpg' alt='some words to be changed'/>
+                        <img class='sm:[75%] md:w-[50%] lg:w-[65%] mr-auto ml-auto' src='img/me.jpg' alt='some words to be changed'/>
                     </div> 
                     <div class='pt-10'>
                         <a href='https://github.com/billbuildsstuff'>
@@ -127,8 +148,5 @@ echo "
     </footer>
     
 </body>
-
-    
-    ';
 "
 ?>
