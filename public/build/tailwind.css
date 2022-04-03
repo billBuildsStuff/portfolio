@@ -475,6 +475,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
+.gap-12 {
+  gap: 3rem;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -519,6 +522,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-1 {
   padding: 0.25rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -581,6 +587,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 p{
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -590,6 +597,9 @@ h1{
 
 }
 
+#logo{
+    min-width:150px;
+}
 
 .hideMe {
     opacity: 0;
@@ -647,25 +657,48 @@ h1{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
+.hover\:bg-slate-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
 .hover\:text-slate-400:hover {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 @media (min-width: 320px) {
 
+  .xsm\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .xsm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .xsm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
-  .xsm\:pr-10 {
-    padding-right: 2.5rem;
+  .xsm\:pr-16 {
+    padding-right: 4rem;
   }
 }
 @media (min-width: 640px) {
 
   .sm\:col-end-2 {
     grid-column-end: 2;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .sm\:pt-5 {
@@ -693,6 +726,16 @@ h1{
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .md\:px-10 {
@@ -725,6 +768,16 @@ h1{
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .lg\:px-44 {
