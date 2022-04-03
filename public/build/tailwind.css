@@ -586,14 +586,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@import url('http://fonts.cdnfonts.com/css/maximum-impact');
 
 p{
     font-family:Arial, Helvetica, sans-serif;
 }
 
 h1{
-    font-family:Impact;
+    font-family:Impact,Impacted;
 
 }
 
@@ -683,6 +683,11 @@ h1{
 
   .xsm\:pr-16 {
     padding-right: 4rem;
+  }
+
+  .xsm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 @media (min-width: 640px) {
