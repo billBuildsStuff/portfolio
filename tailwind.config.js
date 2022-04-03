@@ -2,8 +2,8 @@ module.exports = {
   content: ["./*.{html,js,php}"],
   theme: { 
     screens: {
-    'xsm': '320px',
-    // => @media (min-width: 320px) { ... }  
+    'xsm': '350px',
+    // => @media (min-width: 350px) { ... }  
     'sm': '640px',
     // => @media (min-width: 640px) { ... } 
 

@@ -436,8 +436,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .col-start-6 {
   grid-column-start: 6;
 }
-.col-end-3 {
-  grid-column-end: 3;
+.col-end-2 {
+  grid-column-end: 2;
 }
 .col-end-5 {
   grid-column-end: 5;
@@ -460,8 +460,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid {
   display: grid;
 }
+.h-auto {
+  height: auto;
+}
+.h-\[24px\] {
+  height: 24px;
+}
 .h-56 {
   height: 14rem;
+}
+.w-auto {
+  width: auto;
 }
 .w-\[100\%\] {
   width: 100%;
@@ -474,9 +483,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-center {
   justify-content: center;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .gap-1 {
   gap: 0.25rem;
@@ -525,10 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-5 {
   padding: 1.25rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -583,9 +585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .duration-300 {
   transition-duration: 300ms;
 }
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 @import url('http://fonts.cdnfonts.com/css/maximum-impact');
 
 p{
@@ -598,7 +597,7 @@ h1{
 }
 
 #logo{
-    min-width:150px;
+    min-width:120px;
 }
 
 .hideMe {
@@ -665,15 +664,14 @@ h1{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
-@media (min-width: 320px) {
+@media (min-width: 350px) {
 
-  .xsm\:gap-14 {
-    gap: 3.5rem;
+  .xsm\:h-\[18px\] {
+    height: 18px;
   }
 
-  .xsm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .xsm\:w-\[18px\] {
+    width: 18px;
   }
 
   .xsm\:px-5 {
@@ -681,29 +679,15 @@ h1{
     padding-right: 1.25rem;
   }
 
-  .xsm\:pr-16 {
-    padding-right: 4rem;
-  }
-
-  .xsm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .xsm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 @media (min-width: 640px) {
 
   .sm\:col-end-2 {
     grid-column-end: 2;
-  }
-
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .sm\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .sm\:pt-5 {
@@ -731,16 +715,6 @@ h1{
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .md\:px-10 {
@@ -773,16 +747,6 @@ h1{
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .lg\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .lg\:px-44 {
