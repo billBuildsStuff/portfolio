@@ -597,7 +597,11 @@ h1{
 }
 
 #logo{
-    min-width:120px;
+    min-width:100px;
+}
+#fiv{
+    min-height:18px;
+    min-width:18px;
 }
 
 .hideMe {
@@ -677,6 +681,10 @@ h1{
   .xsm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .xsm\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .xsm\:text-xs {
